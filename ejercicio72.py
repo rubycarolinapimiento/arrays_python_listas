@@ -1,7 +1,8 @@
 resultado = 0
 
 # input
-n = int(input("Número de elementos de los vectores: ")
+n = int(input("Número de elementos de los vectores: "))
+
         
 # processing
 vector1 = [None] * n
@@ -17,8 +18,9 @@ for i in range(n):
     print("Posición:", i)
     vector2[i] = int(input("Valor: "))
 
+producto= 0
 for i in range(n):
-producto += vector2[i]*vector1[i]
+    producto += vector2[i]*vector1[i]
 
 # output
 print("Vector 1:", vector1)

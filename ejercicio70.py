@@ -14,7 +14,7 @@ for i in range(n):
         pos_mayor = i
 if vector[i] < menor:
     menor = vector[i]
-    pos_menor = i
+pos_menor = i
 
 # output
 print("Valor del mayor:", mayor)
