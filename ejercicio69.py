@@ -1,21 +1,17 @@
-mayor = -(100**10)
-menor = 100**10
-# input
-n = int(input("Número de elementos: "))
+salarios = [None]*5
+empleados = [None]*5
+ps = 0
+resultado = 0
 # processing
-vector = [None]*n
-for i in range(n):
-    print("Posición", i)
-    vector[i] = int(input("Valor: "))
-    if vector[i] > mayor:
-        mayor = vector[i]
-        pos_mayor = i
-if vector[i] < menor:
-    menor = vector[i]
-    pos_menor = i
+for i in range(5):
+    empleados[i] = input("Nombre de empleado: ")
+    salarios[i] = int(input("Salario de empleado: "))
+ps += salarios[i]
+ps = ps / 5
 
+for i in range(5):
+    if salarios[i] > ps:
+        resultado += 1
+        
 # output
-print("Valor del mayor:", mayor)
-print("Posición del mayor:", pos_mayor)
-print("Valor del menor:", menor)
-print("Posición del menor:", pos_menor)
+print("Número de empleados que ganan más del ps:", resultado)
